@@ -1,0 +1,7 @@
+# python bytecode
+_pycache_/
+*.pyc
+
+# vscode settings
+.vscode/
+
