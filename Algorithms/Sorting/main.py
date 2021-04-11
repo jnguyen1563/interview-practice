@@ -1,23 +1,31 @@
 import numpy as np
 from random import shuffle
-from timeit import timeit
+import time
 
 # import sorting algorithms
-from Algorithms.Sorting.bubble_sort import bubble_sort
+from algorithms.bubble_sort import standard_bubble_sort 
 
 # Set consistent random seed
 np.random.seed(9020)
 
 # Create shuffled array
 arr = np.arange(10)
-np.random.shuffle(arr)
+shuffle(arr)
 
+def timing_wrapper(func):
+    def inner():
+        start = time.time()
+        print(start)
+        func()
+        end = time.time()
+        print(end)
+        elapsed_time = end-start
+        print(f'Time elapsed: {elapsed_time:.10f}')
+    return inner
 
-def sort(arr:list, algorithm='bubble'):
-    return bubble_sort(arr)
-
+@timing_wrapper
 def main():
-    timeit(bubble_sort(arr), number=10)
+    standard_bubble_sort(arr)
 
 if __name__ == '__main__':
     main()
