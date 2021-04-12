@@ -1,10 +1,12 @@
 # Sorting Algorithms
 This repository will contain the following sorting algorithm
 
-### List of Sorting Algorithms
-- [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort)
-- Selection Sort
-- Insertion Sort
+### Table of Sorting Algorithms
+Sorting Algorithm | Complexity
+------------------|-----------
+[Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | O(n${^2}$)
+[Selection Sort](https://en.wikipedia.org/wiki/Selection_sort) | O(n${^2}$)
+[Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort) | O(n${^2}$)
 - Merge Sort
 - Quick Sort
 - Heap Sort
