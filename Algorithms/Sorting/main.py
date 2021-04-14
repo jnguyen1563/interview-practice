@@ -1,20 +1,21 @@
-import numpy as np
+import random
 from random import shuffle
 from timer import timing_wrapper
 
 # import sorting algorithms
-from algorithms import bubble_sort, selection_sort, insertion_sort
+from algorithms import bubble_sort, selection_sort, insertion_sort, merge_sort
 # Set consistent random seed
-np.random.seed(9020)
+random.seed(9020)
 
-# Create shuffled array
-arr = np.arange(10)
-shuffle(arr)
+# Create shuffled list
+lst = list(range(10))
+shuffle(lst)
+print(f'Shuffled list {lst}')
 
 @timing_wrapper
 def main():
-    sorted = insertion_sort.insertion_sort(arr)
-    print(sorted)
-    
+    sorted = bubble_sort.standard_bubble_sort(lst)
+    print(f'Sorted array: {sorted}')
+
 if __name__ == '__main__':
     main()

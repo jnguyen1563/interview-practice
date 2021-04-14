@@ -1,5 +1,3 @@
-import numpy as np
-
 def insertion_sort(arr):
     """ Performs a basic insertion sort """
     # Iterate through every index beside the first

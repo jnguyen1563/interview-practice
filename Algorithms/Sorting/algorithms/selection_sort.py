@@ -1,5 +1,3 @@
-import numpy as np
-
 def selection_sort(arr):
     # Loop through entire arr
     for i in range(len(arr)):

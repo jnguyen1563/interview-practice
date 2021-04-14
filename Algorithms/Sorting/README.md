@@ -7,7 +7,7 @@ Sorting Algorithm | Complexity
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) | O(n${^2}$)
 [Selection Sort](https://en.wikipedia.org/wiki/Selection_sort) | O(n${^2}$)
 [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort) | O(n${^2}$)
-- Merge Sort
+[Merge Sort](https://en.wikipedia.org/wiki/Merge_sort) | O(*n*log*n*)
 - Quick Sort
 - Heap Sort
 - Bucket Sort
